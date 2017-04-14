@@ -3,13 +3,17 @@
 
 package com.ib.client;
 
+/**
+ * 佣金报告
+ */
 public class CommissionReport {
 
-    public String m_execId;
-    public double m_commission;
-    public String m_currency;
-    public double m_realizedPNL;
-    public double m_yield;
+    public String m_execId;//订单执行代号
+    public double m_commission;//佣金额
+    public String m_currency;//货币
+    public double m_realizedPNL;//现实的溢损额
+    public double m_yield;//收益率
+    //收益率赎回日期
     public int    m_yieldRedemptionDate; // YYYYMMDD format
 
     public CommissionReport() {

@@ -5,6 +5,9 @@ package com.ib.client;
 
 import com.ib.client.Types.Action;
 
+/**
+ * 组合边
+ */
 public class ComboLeg {
 
     /**

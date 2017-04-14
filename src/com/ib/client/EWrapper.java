@@ -9,6 +9,7 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 /**
+ * 从TWS接收消息
  * 全部各种方法的接口放在这里
  */
 public interface EWrapper {

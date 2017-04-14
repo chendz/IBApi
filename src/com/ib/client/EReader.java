@@ -12,6 +12,7 @@ import java.util.LinkedList;
 
 
 /**
+ * 该类从TWS中读取命令，并传到EWrapper中
  * This class reads commands from TWS and passes them to the user defined
  * EWrapper.
  *

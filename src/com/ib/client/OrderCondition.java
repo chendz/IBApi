@@ -4,7 +4,9 @@ import java.io.IOException;
 import java.io.ObjectInput;
 import java.io.ObjectOutput;
 
-
+/**
+ * 订单条件
+ */
 public abstract class OrderCondition {
 	
 	private OrderConditionType m_type;

@@ -3,7 +3,9 @@
 
 package com.ib.client;
 
-
+/**
+ * 订单类型
+ */
 public enum OrderType implements IApiEnum {
 	None( ""),
 	MKT( "MKT"),

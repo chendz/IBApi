@@ -3,6 +3,9 @@
 
 package com.ib.client;
 
+/**
+ * 资讯供应商
+ */
 public class NewsProvider {
     private String 	m_providerCode;
     private String 	m_providerName;

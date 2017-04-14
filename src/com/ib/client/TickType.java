@@ -3,7 +3,9 @@
 
 package com.ib.client;
 
-
+/**
+ * 滴滴答答---跳动类型和跳动值
+ */
 public enum TickType {
     BID_SIZE( 0, "bidSize" ),
     BID( 1, "bidPrice" ),

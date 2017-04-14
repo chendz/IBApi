@@ -28,13 +28,13 @@ public class AccountSummary extends JDialog {
     private JTextField 	m_groupNameTxt = new JTextField("All");
     private JTextField 	m_tagsTxt = new JTextField("AccruedCash,BuyingPower,NetLiquidation");
 
-    private JButton 	m_ok = new JButton( "OK");
-    private JButton 	m_cancel = new JButton( "Cancel");
+    private JButton 	m_ok = new JButton( "确认");
+    private JButton 	m_cancel = new JButton( "取消");
 
     public AccountSummary( JFrame owner) {
         super( owner, true);
 
-        setTitle( "Account Summary");
+        setTitle( "账号总览");
 
         // create account summary panel
         JPanel accountSummaryPanel = new JPanel( new GridLayout( 0, 2, 3, 3) );

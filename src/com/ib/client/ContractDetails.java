@@ -5,6 +5,9 @@ package com.ib.client;
 
 import java.util.ArrayList;
 
+/**
+ * 合约细节
+ */
 public class ContractDetails {
     private Contract m_contract;
     private String   m_marketName;

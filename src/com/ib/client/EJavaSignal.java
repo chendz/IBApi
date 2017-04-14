@@ -1,6 +1,8 @@
 package com.ib.client;
 
-
+/**
+ * java实现的信号灯---发布信号和等待信号
+ */
 public class EJavaSignal implements EReaderSignal {
 	Object monitor = new Object();
 	Boolean open = false;

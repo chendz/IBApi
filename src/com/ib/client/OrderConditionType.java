@@ -1,5 +1,9 @@
 package com.ib.client;
 
+/**
+ * 订单条件类型
+ * 价格，时间。。。
+ */
 public enum OrderConditionType {
 	Price(1),
 	Time(3),

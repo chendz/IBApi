@@ -4,7 +4,9 @@ import java.io.IOException;
 import java.io.ObjectInput;
 import java.io.ObjectOutput;
 
-
+/**
+ * 操作条件
+ */
 public abstract class OperatorCondition extends OrderCondition {
 	
 	private boolean m_isMore;

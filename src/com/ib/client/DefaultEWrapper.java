@@ -8,6 +8,9 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
+/**
+ * EWrapper的空实现
+ */
 class DefaultEWrapper implements EWrapper {
 
 	@Override

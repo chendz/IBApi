@@ -3,7 +3,9 @@
 
 package com.ib.client;
 
-
+/**
+ * 订单状态
+ */
 public enum OrderStatus {
 	ApiPending,
 	ApiCancelled,

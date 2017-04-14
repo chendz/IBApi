@@ -3,6 +3,9 @@
 
 package com.ib.controller;
 
+/**
+ * 别名
+ */
 public class Alias {
 	private String m_account;
 	private String m_alias;

@@ -4,6 +4,9 @@ import java.io.IOException;
 import java.io.ObjectInput;
 import java.io.ObjectOutput;
 
+/**
+ * 价格条件
+ */
 public class PriceCondition extends ContractCondition {
 	
 	public static final OrderConditionType conditionType = OrderConditionType.Price;

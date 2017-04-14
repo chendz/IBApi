@@ -5,6 +5,9 @@ package com.ib.client;
 
 import java.util.Arrays;
 
+/**
+ * 合约描述
+ */
 public class ContractDescription {
     private Contract m_contract;
     private String[] m_derivativeSecTypes;

@@ -1,5 +1,8 @@
 package com.ib.client;
 
+/**
+ * 百分比变更条件
+ */
 public class PercentChangeCondition extends ContractCondition {
 
 	public static final OrderConditionType conditionType = OrderConditionType.PercentChange;

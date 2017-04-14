@@ -5,15 +5,15 @@ package com.ib.client;
 
 
 public class OrderState {
-    private String m_status;
-    private String m_initMargin;
-    private String m_maintMargin;
-    private String m_equityWithLoan;
-    private double m_commission;
-    private double m_minCommission;
-    private double m_maxCommission;
-    private String m_commissionCurrency;
-    private String m_warningText;
+    private String m_status;//订单状态
+    private String m_initMargin;//初始保证金
+    private String m_maintMargin;//维持保证金
+    private String m_equityWithLoan;//借贷的股权
+    private double m_commission;//订单的佣金额
+    private double m_minCommission;//最小佣金
+    private double m_maxCommission;//最大佣金
+    private String m_commissionCurrency;//显示佣金的货币
+    private String m_warningText;//警告信息
 
     // Get
     public double commission()         { return m_commission; }

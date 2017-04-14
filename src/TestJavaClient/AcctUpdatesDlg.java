@@ -18,9 +18,9 @@ import javax.swing.JTextField;
 
 public class AcctUpdatesDlg extends JDialog {
     JTextField 	m_txtAcctCode = new JTextField(10);
-    JButton 	m_btnSubscribe = new JButton("Subscribe");
-    JButton 	m_btnUnSubscribe = new JButton("UnSubscribe");
-    JButton 	m_btnClose = new JButton( "Close");
+    JButton 	m_btnSubscribe = new JButton("订阅");
+    JButton 	m_btnUnSubscribe = new JButton("取消订阅");
+    JButton 	m_btnClose = new JButton( "关闭");
     SampleFrame	m_parent;
     String 		m_acctCode;
     boolean 	m_subscribe = false;

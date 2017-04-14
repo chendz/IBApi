@@ -3,6 +3,9 @@
 
 package com.ib.client;
 
+/**
+ * 市场数据类型：实时，冻结，延迟
+ */
 public class MarketDataType {
     // constants - market data types
     public static final int REALTIME   = 1;

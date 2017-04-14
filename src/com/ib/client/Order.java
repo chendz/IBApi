@@ -16,6 +16,9 @@ import com.ib.client.Types.TimeInForce;
 import com.ib.client.Types.TriggerMethod;
 import com.ib.client.Types.VolatilityType;
 
+/**
+ * 订单
+ */
 public class Order {
     final public static int 	CUSTOMER = 0;
     final public static int 	FIRM = 1;

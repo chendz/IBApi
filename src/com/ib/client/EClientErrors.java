@@ -3,21 +3,23 @@
 
 package com.ib.client;
 
-
+/**
+ * 错误消息表
+ */
 public class EClientErrors {
     public static final int NO_VALID_ID = -1;
-    static final CodeMsgPair ALREADY_CONNECTED = new CodeMsgPair(501, "Already connected.");
-    static final CodeMsgPair CONNECT_FAIL = new CodeMsgPair(502, "Couldn't connect to TWS. Confirm that \"Enable ActiveX and Socket Clients\" "
+    static final CodeMsgPair ALREADY_CONNECTED = new CodeMsgPair(501, "已连接.");
+    static final CodeMsgPair CONNECT_FAIL = new CodeMsgPair(502, "不能连到TWS. 确认开启 \"Enable ActiveX and Socket Clients\" "
     		+ "is enabled and connection port is the same as \"Socket Port\" on the TWS \"Edit->Global Configuration...->API->Settings\" menu. "
     		+ "Live Trading ports: TWS: 7496; IB Gateway: 4001. Simulated Trading ports for new installations of version 954.1 or newer: "
     		+ "TWS: 7497; IB Gateway: 4002");
-    public static final CodeMsgPair UPDATE_TWS = new CodeMsgPair(503, "The TWS is out of date and must be upgraded.");
-    public static final CodeMsgPair NOT_CONNECTED = new CodeMsgPair(504, "Not connected");
-    static final CodeMsgPair UNKNOWN_ID = new CodeMsgPair(505, "Fatal Error: Unknown message id.");
-    static final CodeMsgPair UNSUPPORTED_VERSION = new CodeMsgPair(506, "Unsupported Version");
-    static final CodeMsgPair BAD_LENGTH = new CodeMsgPair(507, "Bad Message Length");
-    static final CodeMsgPair BAD_MESSAGE = new CodeMsgPair(508, "Bad Message");
-    static final CodeMsgPair FAIL_SEND = new CodeMsgPair(509, "Failed to send message - "); // generic message; all future messages should use this
+    public static final CodeMsgPair UPDATE_TWS = new CodeMsgPair(503, "TWS太旧了，必须升级.");
+    public static final CodeMsgPair NOT_CONNECTED = new CodeMsgPair(504, "未连接");
+    static final CodeMsgPair UNKNOWN_ID = new CodeMsgPair(505, "Fatal Error: 未知消息id.");
+    static final CodeMsgPair UNSUPPORTED_VERSION = new CodeMsgPair(506, "未支持的版本");
+    static final CodeMsgPair BAD_LENGTH = new CodeMsgPair(507, "错误消息长度");
+    static final CodeMsgPair BAD_MESSAGE = new CodeMsgPair(508, "错误消息");
+    static final CodeMsgPair FAIL_SEND = new CodeMsgPair(509, "发送消息失败 - "); // generic message; all future messages should use this
     static final CodeMsgPair FAIL_SEND_REQMKT = new CodeMsgPair(510, "Request Market Data Sending Error - ");
     static final CodeMsgPair FAIL_SEND_CANMKT = new CodeMsgPair(511, "Cancel Market Data Sending Error - ");
     static final CodeMsgPair FAIL_SEND_ORDER = new CodeMsgPair(512, "Order Sending Error - ");

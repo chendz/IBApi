@@ -3,6 +3,9 @@
 
 package com.ib.client;
 
+/**
+ * 市场数据深度描述
+ */
 public class DepthMktDataDescription {
     private String 	m_exchange;
     private String 	m_secType;

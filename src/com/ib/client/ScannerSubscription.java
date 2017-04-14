@@ -3,6 +3,9 @@
 
 package com.ib.client;
 
+/**
+ * 市场扫描
+ */
 public class ScannerSubscription {
     public final static int NO_ROW_NUMBER_SPECIFIED = -1;
 

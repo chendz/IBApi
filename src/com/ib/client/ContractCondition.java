@@ -5,6 +5,9 @@ import java.io.ObjectInput;
 import java.io.ObjectOutput;
 import java.util.ArrayList;
 
+/**
+ * 合约条件
+ */
 public abstract class ContractCondition extends OperatorCondition {
 
 	@Override

@@ -9,6 +9,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
 
+/**
+ * 显示格式
+ */
 public class Formats {
 	private static final Format FMT2 = new DecimalFormat( "#,##0.00");
 	private static final Format FMT0 = new DecimalFormat( "#,##0");

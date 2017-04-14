@@ -9,6 +9,9 @@ import com.ib.client.Types.Right;
 import com.ib.client.Types.SecIdType;
 import com.ib.client.Types.SecType;
 
+/**
+ * 合约
+ */
 public class Contract implements Cloneable {
     private int     m_conid;
     private String  m_symbol;

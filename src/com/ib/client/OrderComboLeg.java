@@ -3,7 +3,9 @@
 
 package com.ib.client;
 
-
+/**
+ * 订单组合边
+ */
 public class OrderComboLeg {
     //订单特定边价格
     private double m_price; // price per leg

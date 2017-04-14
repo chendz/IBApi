@@ -4,6 +4,9 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 
+/**
+ * 往输出流写入数据
+ */
 public class ESocket implements ETransport {
 
 	protected DataOutputStream m_dos;   // the socket output stream	
