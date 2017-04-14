@@ -144,7 +144,7 @@ public class OrderDlg extends JDialog {
         super( owner, true);
 
         m_parent = owner;
-        setTitle( "Sample");
+        setTitle( "示例");
 
         java.awt.GridBagConstraints gbc = new java.awt.GridBagConstraints() ;
         gbc.fill = GridBagConstraints.BOTH ;
@@ -161,7 +161,7 @@ public class OrderDlg extends JDialog {
 
         // create contract panel
         IBGridBagPanel pContractDetails = new IBGridBagPanel();
-        pContractDetails.setBorder( BorderFactory.createTitledBorder( "Contract Info") );
+        pContractDetails.setBorder( BorderFactory.createTitledBorder( "合约信息") );
         addGBComponent(pContractDetails, new JLabel( "Contract Id"), gbc, COL1_WIDTH, GridBagConstraints.RELATIVE );
         addGBComponent(pContractDetails, m_conId, gbc, COL2_WIDTH, GridBagConstraints.REMAINDER);
         addGBComponent(pContractDetails, new JLabel( "Symbol"), gbc, COL1_WIDTH, GridBagConstraints.RELATIVE );
@@ -195,7 +195,7 @@ public class OrderDlg extends JDialog {
 
         // create order panel
         IBGridBagPanel pOrderDetails = new IBGridBagPanel();
-        pOrderDetails.setBorder( BorderFactory.createTitledBorder( "Order Info") );
+        pOrderDetails.setBorder( BorderFactory.createTitledBorder( "订单信息") );
         addGBComponent(pOrderDetails, new JLabel( "Action"), gbc, COL1_WIDTH, GridBagConstraints.RELATIVE );
         addGBComponent(pOrderDetails, m_action, gbc, COL2_WIDTH, GridBagConstraints.REMAINDER);
         addGBComponent(pOrderDetails, new JLabel( "Total Order Size"), gbc, COL1_WIDTH, GridBagConstraints.RELATIVE );
@@ -215,13 +215,13 @@ public class OrderDlg extends JDialog {
 
         // create marketDepth panel
         IBGridBagPanel pMarketDepth = new IBGridBagPanel();
-        pMarketDepth.setBorder( BorderFactory.createTitledBorder( "Market Depth") );
+        pMarketDepth.setBorder( BorderFactory.createTitledBorder( "市场深度") );
         addGBComponent(pMarketDepth, new JLabel( "Number of Rows"), gbc, COL1_WIDTH, GridBagConstraints.RELATIVE) ;
         addGBComponent(pMarketDepth, m_marketDepthRowTextField, gbc, COL2_WIDTH, GridBagConstraints.REMAINDER) ;
 
         // create marketData panel
         IBGridBagPanel pMarketData = new IBGridBagPanel();
-        pMarketData.setBorder( BorderFactory.createTitledBorder( "Market Data") );
+        pMarketData.setBorder( BorderFactory.createTitledBorder( "市场数据") );
         addGBComponent(pMarketData, new JLabel( "Generic Tick Tags"), gbc, COL1_WIDTH, GridBagConstraints.RELATIVE) ;
         addGBComponent(pMarketData, m_genericTicksTextField, gbc, COL2_WIDTH, GridBagConstraints.REMAINDER) ;
         addGBComponent(pMarketData, m_snapshotMktDataTextField, gbc, COL1_WIDTH, GridBagConstraints.RELATIVE) ;
@@ -239,7 +239,7 @@ public class OrderDlg extends JDialog {
 
         // create historical data panel
         IBGridBagPanel pBackfill = new IBGridBagPanel();
-        pBackfill.setBorder( BorderFactory.createTitledBorder( "Historical Data Query") );
+        pBackfill.setBorder( BorderFactory.createTitledBorder( "历史数据查询") );
         GregorianCalendar gc = new GregorianCalendar();
         gc.setTimeZone(TimeZone.getTimeZone("GMT"));
         String dateTime = "" +
@@ -267,7 +267,7 @@ public class OrderDlg extends JDialog {
 
         // create marketDataType panel
         IBGridBagPanel pMarketDataType = new IBGridBagPanel();
-        pMarketDataType.setBorder( BorderFactory.createTitledBorder( "Market Data Type") );
+        pMarketDataType.setBorder( BorderFactory.createTitledBorder( "市场数据类型") );
         addGBComponent(pMarketDataType, new JLabel( "Market Data Type"), gbc, COL1_WIDTH, GridBagConstraints.RELATIVE) ;
         addGBComponent(pMarketDataType, m_marketDataTypeCombo, gbc, COL2_WIDTH, GridBagConstraints.REMAINDER) ;
 

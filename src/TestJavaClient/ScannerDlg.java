@@ -21,6 +21,9 @@ import javax.swing.JTextField;
 import com.ib.client.ScannerSubscription;
 import com.ib.client.TagValue;
 
+/**
+ * 市场扫描
+ */
 public class ScannerDlg extends JDialog {
     public static final int NO_SELECTION = 0;
     public static final int SUBSCRIBE_SELECTION = 1;

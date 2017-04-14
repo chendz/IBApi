@@ -16,6 +16,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+/**
+ * 连接TWS的配置
+ */
 public class ConnectDlg extends JDialog {
     public static int LAST_CLIENT_ID = 0;
 
@@ -23,8 +26,8 @@ public class ConnectDlg extends JDialog {
     JTextField 	m_port = new JTextField( "7496");
     JTextField 	m_clientId = new JTextField();
     JTextField  m_optCapts = new JTextField();
-    JButton 	m_ok = new JButton( "OK");
-    JButton 	m_cancel = new JButton( "Cancel");
+    JButton 	m_ok = new JButton( "确认");
+    JButton 	m_cancel = new JButton( "取消");
     String 	m_retIpAddress;
     String  m_retOptCapts;
     int 	m_retPort;
@@ -54,9 +57,9 @@ public class ConnectDlg extends JDialog {
         // create mid panel
         JPanel midPanel = new JPanel();
         midPanel.setLayout( new GridLayout( 0, 1, 5, 5) );
-        midPanel.add( new JLabel( "IP Address (leave blank for local host)") );
+        midPanel.add( new JLabel( "IP地址 (leave blank for local host)") );
         midPanel.add( m_ipAddress);
-        midPanel.add( new JLabel( "Port") );
+        midPanel.add( new JLabel( "端口") );
         midPanel.add( m_port);
         midPanel.add( new JLabel( "Client ID") );
         midPanel.add( m_clientId);
@@ -75,7 +78,7 @@ public class ConnectDlg extends JDialog {
         getContentPane().add( midPanel, BorderLayout.NORTH);
         getContentPane().add( defaultPortNumberPanel, BorderLayout.CENTER);
         getContentPane().add( buttonPanel, BorderLayout.SOUTH);
-        setTitle( "Connect");
+        setTitle( "连接");
         pack();
     }
 
