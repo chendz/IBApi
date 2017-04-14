@@ -400,6 +400,9 @@ public abstract class EClient {
         }
     }
 
+    /**
+     * 请求扫描参数
+     */
     public synchronized void reqScannerParameters() {
         // not connected?
         if( !isConnected()) {
@@ -430,6 +433,12 @@ public abstract class EClient {
         }
     }
 
+    /**
+     * 请求市场扫描订阅结果
+     * @param tickerId
+     * @param subscription
+     * @param scannerSubscriptionOptions
+     */
     public synchronized void reqScannerSubscription( int tickerId, ScannerSubscription subscription, ArrayList<TagValue> scannerSubscriptionOptions) {
         // not connected?
         if( !isConnected()) {
@@ -500,6 +509,15 @@ public abstract class EClient {
         }
     }
 
+    /**
+     * 请求市场数据
+     * @param tickerId
+     * @param contract
+     * @param genericTickList
+     * @param snapshot
+     * @param regulatorySnaphsot
+     * @param mktDataOptions
+     */
     public synchronized void reqMktData(int tickerId, Contract contract,
     		String genericTickList, boolean snapshot, boolean regulatorySnaphsot, List<TagValue> mktDataOptions) {
         if (!isConnected()) {
@@ -855,8 +873,16 @@ public abstract class EClient {
           close();
         }
     }
-    
-    
+
+    /**
+     * 请求实时Bars
+     * @param tickerId
+     * @param contract
+     * @param barSize
+     * @param whatToShow
+     * @param useRTH
+     * @param realTimeBarsOptions
+     */
     public synchronized void reqRealTimeBars(int tickerId, Contract contract, int barSize, String whatToShow, boolean useRTH, ArrayList<TagValue> realTimeBarsOptions) {
         // not connected?
         if( !isConnected()) {
@@ -931,6 +957,11 @@ public abstract class EClient {
         }
     }
 
+    /**
+     * 请求合约细节
+     * @param reqId
+     * @param contract
+     */
     public synchronized void reqContractDetails(int reqId, Contract contract) {
         // not connected?
         if( !isConnected()) {
@@ -1031,6 +1062,13 @@ public abstract class EClient {
         }
     }
 
+    /**
+     * 请求市场深度数据
+     * @param tickerId
+     * @param contract
+     * @param numRows
+     * @param mktDepthOptions
+     */
     public synchronized void reqMktDepth( int tickerId, Contract contract, int numRows, ArrayList<TagValue> mktDepthOptions) {
         // not connected?
         if( !isConnected()) {
@@ -1165,6 +1203,15 @@ public abstract class EClient {
         }
     }
 
+    /**
+     * 行使期权
+     * @param tickerId
+     * @param contract
+     * @param exerciseAction
+     * @param exerciseQuantity
+     * @param account
+     * @param override
+     */
     public synchronized void exerciseOptions( int tickerId, Contract contract,
                                               int exerciseAction, int exerciseQuantity,
                                               String account, int override) {
@@ -1226,6 +1273,12 @@ public abstract class EClient {
       }
     }
 
+    /**
+     * 下达订单
+     * @param id
+     * @param contract
+     * @param order
+     */
     public synchronized void placeOrder( int id, Contract contract, Order order) {
         // not connected?
         if( !isConnected()) {
@@ -1875,6 +1928,11 @@ public abstract class EClient {
         }
     }
 
+    /**
+     * 请求账号更新
+     * @param subscribe
+     * @param acctCode
+     */
     public synchronized void reqAccountUpdates(boolean subscribe, String acctCode) {
         // not connected?
         if( !isConnected()) {
@@ -1904,6 +1962,11 @@ public abstract class EClient {
         }
     }
 
+    /**
+     * 请求日执行报告列表
+     * @param reqId
+     * @param filter
+     */
     public synchronized void reqExecutions(int reqId, ExecutionFilter filter) {
         // not connected?
         if( !isConnected()) {

@@ -6,6 +6,13 @@ package com.ib.client;
 import com.ib.client.Types.Action;
 
 public class ComboLeg {
+
+    /**
+     * 指定订单是开放订单还是关闭订单
+     * Same---跟母证券相同，零售客户唯一选择
+     * Open---开放，仅对机构客户有效
+     * Close---关闭，仅对机构客户有效。
+     */
     public enum OpenClose implements IApiEnum {
         Same, Open, Close, Unknown;
 
@@ -19,12 +26,14 @@ public class ComboLeg {
         }
     }
 
-    private int m_conid;
-    private int m_ratio;
+    private int m_conid;//指定证券的独特合约标识符
+    private int m_ratio;//组合订单的比率
     private String m_action = "BUY"; // BUY/SELL/SSHORT/SSHORTX
-    private String m_exchange;
+    private String m_exchange;//交易所
+    //指定订单是开放订单还是关闭订单
     private int m_openClose = 0; // Same
     // for stock legs when doing short sale
+    //仅用于机构客户，0表示不适用，1表示清算经纪商，2表示第三方
     private int m_shortSaleSlot; // 1 = clearing broker, 2 = third party
     private String m_designatedLocation;
     private int m_exemptCode;

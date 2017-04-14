@@ -4,22 +4,22 @@
 package com.ib.client;
 
 public class Execution {
-    private int 	m_orderId;
-    private int 	m_clientId;
-    private String 	m_execId;
-    private String 	m_time;
-    private String 	m_acctNumber;
-    private String 	m_exchange;
-    private String 	m_side;
-    private double 	m_shares;
-    private double 	m_price;
-    private int		m_permId;
-    private int     m_liquidation;
-    private double	m_cumQty;
-    private double	m_avgPrice;
-    private String  m_orderRef;
+    private int 	m_orderId;//订单代号
+    private int 	m_clientId;//下达订单的客户代号
+    private String 	m_execId;//独特的订单执行代号
+    private String 	m_time;//订单执行时间
+    private String 	m_acctNumber;//客户的账号号码
+    private String 	m_exchange;//执行订单的交易所
+    private String 	m_side;//确定交易是卖出或买进，值为BOT买进和SLD卖出
+    private double 	m_shares;//执行的股数
+    private double 	m_price;//订单的执行价格，不包括佣金
+    private int		m_permId;//用于确定订单的TWS代号，在整个TWS运行期间保持不变
+    private int     m_liquidation;//确认在必要时最后清算的头寸
+    private double	m_cumQty;//累积数量。用于正常交易，组合交易和组合边
+    private double	m_avgPrice;//平均价格
+    private String  m_orderRef;//
     private String 	m_evRule;
-    private double 	m_evMultiplier;
+    private double 	m_evMultiplier;//在价格改变是1的情况下，合约的市值改变大约是多少
     private String m_modelCode;
 
     // Get

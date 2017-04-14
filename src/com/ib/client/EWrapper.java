@@ -8,6 +8,9 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
+/**
+ * 全部各种方法的接口放在这里
+ */
 public interface EWrapper {
     ///////////////////////////////////////////////////////////////////////
     // Interface methods

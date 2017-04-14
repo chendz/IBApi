@@ -5,6 +5,9 @@ import java.io.FilterInputStream;
 import java.io.IOException;
 import java.net.Socket;
 
+/**
+ * 发送消息到TWS
+ */
 public class EClientSocket extends EClient implements EClientMsgSink  {
 
 	protected int m_redirectCount = 0;
@@ -47,6 +50,11 @@ public class EClientSocket extends EClient implements EClientMsgSink  {
     	sendMsg(msg);
     }
 
+	/**
+	 * 连接TWS
+	 * @param socket
+	 * @throws IOException
+	 */
 	protected synchronized void eConnect(Socket socket) throws IOException {
 	    // create io streams
 	    m_socketTransport = new ESocket(socket);

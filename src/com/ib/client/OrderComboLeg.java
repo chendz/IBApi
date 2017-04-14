@@ -5,6 +5,7 @@ package com.ib.client;
 
 
 public class OrderComboLeg {
+    //订单特定边价格
     private double m_price; // price per leg
 
     public double price()       { return m_price; }

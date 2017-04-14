@@ -140,9 +140,9 @@ class SampleFrame extends JFrame implements EWrapper {
 
     private JPanel createButtonPanel() {
         JPanel buttonPanel = new JPanel( new GridLayout( 0, 1) );
-        JButton butConnect = new JButton( "Connect");
+        JButton butConnect = new JButton( "连接");
         butConnect.addActionListener(e -> onConnect());
-        JButton butDisconnect = new JButton( "Disconnect");
+        JButton butDisconnect = new JButton( "断开连接");
         butDisconnect.addActionListener(e -> onDisconnect());
         JButton butMktData = new JButton( "Req Mkt Data");
         butMktData.addActionListener(e -> onReqMktData());
